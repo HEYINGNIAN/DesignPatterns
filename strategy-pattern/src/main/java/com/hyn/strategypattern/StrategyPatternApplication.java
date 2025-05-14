@@ -1,13 +1,13 @@
-package com.hyn.designpatterns;
+package com.hyn.strategypattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DesignPatternsApplication {
+public class StrategyPatternApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DesignPatternsApplication.class, args);
+        SpringApplication.run(StrategyPatternApplication.class, args);
     }
 
 }
