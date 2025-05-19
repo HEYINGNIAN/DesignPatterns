@@ -54,6 +54,7 @@ public class CustomerController2_1 {
         try {
             int rechargeNum = Integer.parseInt(recharge);
             UserType userType = UserType.typeof(rechargeNum);
+            //这里做了优化，这里是直接从map中获取，不在像之前那么每一个service都需要在list中遍历
             CustomerService2 customerService = customerServiceMap.getOrDefault(userType, defaultCustomerService);
             return customerService.findCustomer();
         } catch (Exception e) {
